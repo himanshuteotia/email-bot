@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Bot</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome ka updated CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-robot"></i> Email Bot</h1>
+        </header>
+        <main>
+            <section class="card upload-section">
+                <h2><i class="fas fa-upload"></i> Upload Email List</h2>
+                <form id="uploadForm">
+                    <div class="file-input-container">
+                        <div class="file-input-wrapper">
+                            <input type="file" name="file" id="file" accept=".txt" required>
+                            <label for="file"><i class="fas fa-file-alt"></i> <span>Choose a file</span></label>
+                        </div>
+                        <button type="submit" class="btn" id="uploadBtn" style="display: none;"><i class="fas fa-cloud-upload-alt"></i> Upload</button>
+                    </div>
+                </form>
+            </section>
+            <section id="emailList" class="card email-list-section">
+                <div class="email-list-header">
+                    <span id="emailCount">Total Emails: 0</span>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="email-items">
+                    <p id="uploadPrompt">Please upload a file to see emails.</p>
+                </div>
+            </section>
+            <button id="openEmailForm" class="btn btn-primary" style="display: none;"><i class="fas fa-pen"></i> Compose Email</button>
+            <section id="emailFormContainer" class="card compose-section" style="display: none;">
+                <h2><i class="fas fa-envelope"></i> Compose Email</h2>
+                <form id="emailForm">
+                    <input type="text" id="subject" placeholder="Subject" required>
+                    <textarea id="content" placeholder="Email Content" required></textarea>
+                    <div class="form-footer">
+                        <div class="file-input-wrapper">
+                            <input type="file" id="attachment" name="attachment">
+                            <label for="attachment"><i class="fas fa-paperclip"></i> Attach a file</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send Emails</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -21,7 +21,7 @@ Email Bot is a Node.js application that allows users to send bulk emails easily.
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/email-bot.git
+   git clone https://github.com/himanshuteotia/email-bot.git
    cd email-bot
    ```
 

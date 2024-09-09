@@ -11,17 +11,6 @@ Email Bot is a Node.js application that allows users to send bulk emails easily.
 - Compose emails with subject, content, and attachments
 - Send emails to multiple recipients at once
 
-## Screenshots
-
-### Uploading Email List
-![Uploading Email List](screenshots/upload_email_list.png "Uploading Email List")
-
-### Composing Email
-![Composing Email](screenshots/compose_email.png "Composing Email")
-
-### Sending Emails
-![Sending Emails](screenshots/sending_emails.png "Sending Emails")
-
 ## Prerequisites
 
 - Node.js (v12 or higher)
